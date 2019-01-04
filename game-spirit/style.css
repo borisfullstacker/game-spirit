@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    /* border: 1px solid black; */
+}
+
+#main>section {
+    width: 500px;
+    margin: 0 auto;
+    /* background-color: blue; */
+    text-align: center;
+}
+
+#main>section>a {
+    display: inline-block;
+    line-height: 50px;
+    background-color: yellow;
+    font-size: 25px;
+    padding: 0 20px 0 20px;
+    /* box-sizing: border-box; */
+    border: 2px solid grey;
+}
+
+#main>section>a:first-child {
+    border-left-width: 4px;
+}
+
+#main>section>a:last-child {
+    border-right-width: 4px;
+}
+
+/*  */
+
+#main>section>div {
+    height: 110px;
+    width: 68px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 50px;
+    background: white url(fight.png) no-repeat 0 0;
+}
+
+#main>section>a:hover {
+    background-color: blue;
+    color: yellow;
+}
+
+/* this is how you influence on a different sibiling element "~" */
+
+#main>section>a:nth-child(1):hover ~div {
+    background-position-x: -70px;
+}
+
+#main>section>a:nth-child(2):hover~div {
+    background-position-x: -140px;
+}
+
+#main>section>a:nth-child(3):hover~div {
+    background-position-x: -210px;
+}
+
+#main>section>a:nth-child(4):hover~div {
+    background-position-x: -280px;
+}
+
+#main>section>a:nth-child(5):hover~div {
+    background-position-x: -350px;
+}
+
+#main>section>a:nth-child(6):hover~div {
+    background-position-x: -420px;
+}
